@@ -33,6 +33,8 @@ export default {
     '@nuxtjs/tailwindcss',
     // https://www.npmjs.com/package/nuxt-gsap-module
     'nuxt-gsap-module',
+    // https://www.npmjs.com/package/@nuxtjs/fontawesome
+    '@nuxtjs/fontawesome',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -50,5 +52,12 @@ export default {
   // https://www.npmjs.com/package/nuxt-gsap-module
   gsap: {
     /* module options */
+  },
+
+  fontawesome: {
+    icons: {
+      solid: ['faHome'],
+      brands: ['faFacebookSquare', 'faGithub', 'faInstagram'],
+    },
   },
 }

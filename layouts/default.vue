@@ -30,27 +30,27 @@ export default {
   }),
   mounted() {
     const loader = this.$refs.loader
-    const loaderImage = this.$refs.loaderImage
-    const loaderNameOutline = this.$refs.loaderNameOutline
-    const loaderNameBase = this.$refs.loaderNameBase
-    const loaderNameSub = this.$refs.loaderNameSub
+    // const loaderImage = this.$refs.loaderImage
+    // const loaderNameOutline = this.$refs.loaderNameOutline
+    // const loaderNameBase = this.$refs.loaderNameBase
+    // const loaderNameSub = this.$refs.loaderNameSub
 
     this.tl = this.$gsap.timeline()
     this.tl
-      .to(loader, { opacity: 1, duration: 0.5 })
-      .from(loaderImage, { opacity: 0, y: 60, duration: 0.5 })
-      .from([loaderNameOutline, loaderNameBase], {
-        opacity: 0,
-        y: 60,
-        duration: 0.4,
-      })
-      .from(loaderNameSub, {
-        autoAlpha: 0,
-        y: -40,
-        duration: 0.4,
-        delay: '-0.4',
-      })
-      .to(loader, { height: 0, opacity: 0, duration: 0.3, delay: 4 })
+      // .to(loader, { opacity: 1, duration: 0.5 })
+      // .from(loaderImage, { opacity: 0, y: 60, duration: 0.5 })
+      // .from([loaderNameOutline, loaderNameBase], {
+      //   opacity: 0,
+      //   y: 60,
+      //   duration: 0.4,
+      // })
+      // .from(loaderNameSub, {
+      //   autoAlpha: 0,
+      //   y: -40,
+      //   duration: 0.4,
+      //   delay: '-0.4',
+      // })
+      // .to(loader, { height: 0, opacity: 0, duration: 0.3, delay: 4 })
       .set(loader, { display: 'none' })
   },
 }
