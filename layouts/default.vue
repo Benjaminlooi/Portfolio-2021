@@ -1,5 +1,7 @@
 <template>
   <div>
+    <Navbar />
+
     <div id="loader" :class="isLoaded && 'is-loaded'" ref="loader">
       <div class="loader-container">
         <div class="loader-image" ref="loaderImage">
@@ -23,7 +25,9 @@
 </template>
 
 <script>
+import Navbar from '~/components/Navbar.vue'
 export default {
+  components: { Navbar },
   data: () => ({
     isLoaded: false,
     tl: null,
