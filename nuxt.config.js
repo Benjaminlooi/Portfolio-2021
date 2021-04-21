@@ -56,7 +56,7 @@ export default {
 
   fontawesome: {
     icons: {
-      solid: ['faHome'],
+      solid: ['faExternalLinkAlt'],
       brands: ['faFacebookSquare', 'faGithub', 'faInstagram'],
     },
   },
