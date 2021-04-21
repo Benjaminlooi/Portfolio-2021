@@ -17,7 +17,12 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [],
+  css: [
+    // https://eduardoboucas.github.io/include-media/
+    // 'include-media/dist/_include-media.scss',
+    // Global custom scss
+    '@/assets/css/main.scss',
+  ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [],
