@@ -29,6 +29,13 @@ const projectsData = [
     projectDesc: 'Front end: vuejs<br>firebase',
   },
   {
+    imageSrc: 'tanginabobogang.jpg',
+    imageAlt: 'Tangina Bobo Gang Photo',
+    projectLink: 'https://tanginabobo.benjaminlooi.dev/',
+    projectTitle: 'Tangina Bobo Gang Gallery',
+    projectDesc: 'Built with NuxtJs',
+  },
+  {
     imageSrc: 'ledo.png',
     imageAlt: 'image cap',
     projectLink: 'https://theledo.netlify.com/',
