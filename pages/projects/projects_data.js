@@ -29,7 +29,7 @@ const projectsData = [
     projectDesc: 'Front end: vuejs<br>firebase',
   },
   {
-    imageSrc: 'tanginabobogang.jpg',
+    imageSrc: 'tanginabobogang.png',
     imageAlt: 'Tangina Bobo Gang Photo',
     projectLink: 'https://tanginabobo.benjaminlooi.dev/',
     projectTitle: 'Tangina Bobo Gang Gallery',
