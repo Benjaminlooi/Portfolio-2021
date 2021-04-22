@@ -9,7 +9,13 @@
 </template>
 
 <script>
-export default {}
+export default {
+  head() {
+    return {
+      title: 'BENJAMIN LOOI | WEB DEVELOPER | RESUME',
+    }
+  },
+}
 </script>
 
 <style></style>

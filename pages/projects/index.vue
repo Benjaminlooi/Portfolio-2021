@@ -39,6 +39,11 @@ export default {
   data: () => ({
     projectsData,
   }),
+  head() {
+    return {
+      title: 'BENJAMIN LOOI | WEB DEVELOPER | PROJECTS',
+    }
+  },
 }
 </script>
 
