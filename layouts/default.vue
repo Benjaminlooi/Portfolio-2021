@@ -3,7 +3,7 @@
     <Navbar />
 
     <div id="loader" :class="isLoaded && 'is-loaded'" ref="loader">
-      <div class="loader-container">
+      <div class="loader-container" ref="loaderContainer">
         <div class="loader-image" ref="loaderImage">
           <img class="fuwafuwa" src="~/assets/img/ben_bighead.svg" />
         </div>
@@ -34,6 +34,7 @@ export default {
   }),
   mounted() {
     const loader = this.$refs.loader
+    const loaderContainerRef = this.$refs.loaderContainer
     const loaderImage = this.$refs.loaderImage
     const loaderNameOutline = this.$refs.loaderNameOutline
     const loaderNameBase = this.$refs.loaderNameBase
@@ -41,7 +42,7 @@ export default {
 
     this.tl = this.$gsap.timeline()
     this.tl
-      .to(loader, { opacity: 1, duration: 1 })
+      .to(loaderContainerRef, { opacity: 1, duration: 1 })
       .from(loaderImage, { opacity: 0, y: 60, duration: 0.5 })
       .from([loaderNameOutline, loaderNameBase], {
         opacity: 0,
@@ -79,6 +80,7 @@ export default {
 }
 
 .loader-container {
+  opacity: 0;
   width: 100%;
   height: 100%;
 
