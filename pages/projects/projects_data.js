@@ -32,25 +32,43 @@ const projectsData = [
       'Find out the lastest updates and essential information about the current outbreak in Malaysia, COVID-19 | News & Stats for coronavirus in Malaysia<br>Frontend: VueJS<br>Database: Firebase firestore<br>Backend: ExpressJS w/ puppeteer',
   },
   {
+    imageSrc: 'bens_blog.png',
+    imageAlt: "Benjamin Looi's Blog image cap",
+    projectLink: 'https://blog.benjaminlooi.dev',
+    projectTitle: "Ben's Blog",
+    projectDesc: 'My fabulous blog <br> Made using GatsbyJs',
+  },
+  {
+    imageSrc: 'benjamin_looi_portfolio.png',
+    imageAlt: "Benjamin Looi's Portfolio image cap",
+    projectLink: 'https://benjaminlooi.dev',
+    projectTitle: "Ben's Portfolio website",
+    projectDesc:
+      'My fabulous portfolio (You are currently on it) <br> Made using NuxtJs',
+  },
+  {
     imageSrc: 'r-jerome.jpg',
     imageAlt: 'jerome image cap',
     projectLink: 'https://rayymondjerome.netlify.com/',
     projectTitle: "Rayymond Jerome's Portfolio",
-    projectDesc: 'Front end: vuejs<br>firebase',
+    projectDesc:
+      'A joke portfolio build for my best friend Jerome. <br>I have learned my very first GSAP usage with this website.<br>Front-end: VueJs<br>Back-end: firebase',
   },
   {
     imageSrc: 'tanginabobogang.png',
     imageAlt: 'Tangina Bobo Gang Photo',
     projectLink: 'https://tanginabobo.benjaminlooi.dev/',
     projectTitle: 'Tangina Bobo Gang Gallery',
-    projectDesc: 'Built with NuxtJs',
+    projectDesc:
+      "An image gallery to commemorate Ashwin's (my friend) photoshoots <br>Built with NuxtJs and Firebase",
   },
   {
     imageSrc: 'ledo.png',
-    imageAlt: 'image cap',
+    imageAlt: 'theledo image cap',
     projectLink: 'https://theledo.netlify.com/',
     projectTitle: 'Ledo',
-    projectDesc: 'Todo app',
+    projectDesc:
+      'A Todo app made as my FYP project for my Diploma at Uniten <br> Made using VueJs for the front-end and Firebase Services for the backend',
   },
   // {
   //   imageSrc: 'utn.jpg',
@@ -79,7 +97,7 @@ const projectsData = [
     projectLink: 'http://bensanity.epizy.com/prs',
     projectTitle: 'Pet Registration System',
     projectDesc:
-      'Web Prog. Class Assignment<br>HTML+CSS+PHP+MySQL w/ Bootstrap',
+      "Uniten's Web Prog. Class Assignment<br>HTML+CSS+PHP+MySQL w/ Bootstrap",
   },
   // {
   //   imageSrc: null,
@@ -94,7 +112,7 @@ const projectsData = [
     projectLink: 'https://benjaminlooi.github.io/the-journey-of-ray-ori/',
     projectTitle: 'The story of ray',
     projectDesc:
-      'System Administration Class Assignment<br>HTML+CSS w/ Bootstrap',
+      "Uniten's System Administration Class Assignment<br>HTML+CSS w/ Bootstrap",
   },
   // {
   //   imageSrc: null,
