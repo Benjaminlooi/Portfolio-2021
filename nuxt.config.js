@@ -17,6 +17,76 @@ export default {
         content:
           'Web Developer based in Kuala Lumpur. This is my fabulous portfolio.',
       },
+
+      // Twitter
+      // Test on: https://cards-dev.twitter.com/validator
+      {
+        hid: 'twitter:card',
+        name: 'twitter:card',
+        content: 'summary_large_image',
+      },
+      { hid: 'twitter:site', name: 'twitter:site', content: '@Benjaminlooi_' },
+      {
+        hid: 'twitter:url',
+        name: 'twitter:url',
+        content: 'https://benjaminlooi.dev',
+      },
+      {
+        hid: 'twitter:title',
+        name: 'twitter:title',
+        content: 'BENJAMIN LOOI | WEB DEVELOPER',
+      },
+      {
+        hid: 'twitter:description',
+        name: 'twitter:description',
+        content:
+          'Web Developer based in Kuala Lumpur. This is my fabulous portfolio.',
+      },
+      {
+        hid: 'twitter:image',
+        name: 'twitter:image',
+        content: 'https://benjaminlooi.dev/BenjaminLooiPortfolio.png',
+      },
+
+      // Open Graph
+      // Test on: https://developers.facebook.com/tools/debug/
+      {
+        hid: 'og:site_name',
+        property: 'og:site_name',
+        content: 'BENJAMIN LOOI | WEB DEVELOPER',
+      },
+      { hid: 'og:type', property: 'og:type', content: 'website' },
+      {
+        hid: 'og:url',
+        property: 'og:url',
+        content: 'https://benjaminlooi.dev',
+      },
+      {
+        hid: 'og:title',
+        property: 'og:title',
+        content: 'BENJAMIN LOOI | WEB DEVELOPER',
+      },
+      {
+        hid: 'og:description',
+        property: 'og:description',
+        content:
+          'Web Developer based in Kuala Lumpur. This is my fabulous portfolio.',
+      },
+      {
+        hid: 'og:image',
+        property: 'og:image',
+        content: 'https://benjaminlooi.dev/BenjaminLooiPortfolio.png',
+      },
+      {
+        hid: 'og:image:secure_url',
+        property: 'og:image:secure_url',
+        content: 'https://benjaminlooi.dev/BenjaminLooiPortfolio.png',
+      },
+      {
+        hid: 'og:image:alt',
+        property: 'og:image:alt',
+        content: 'Benjamin Looi Portfolio',
+      },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
