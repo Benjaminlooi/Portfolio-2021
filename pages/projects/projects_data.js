@@ -1,17 +1,27 @@
 const projectsData = [
   {
+    imageSrc: 'lumi_car_care.png',
+    imageAlt: 'Lumi Car Care image cap',
+    projectLink: 'https://lumicarcare.com/',
+    projectTitle: 'Lumi Car Care',
+    projectDesc:
+      'A project that I worked on for one of our clients in Platinum Code. <br>The website is build using ReactJS with api capabilities',
+  },
+  {
     imageSrc: 'seo_quiz_banner.jpg',
     imageAlt: 'SEO Quiz image cap',
     projectLink: 'https://seopressor.com/seo-quiz',
     projectTitle: 'SEO Quiz',
-    projectDesc: 'HTML+CSS+PHP+JS w/ Jquery',
+    projectDesc:
+      "Quiz application that I've build during my internship @ Plentisoft. <br>Website is build on Wordpress. <br>Technologies: HTML+CSS+PHP+JS w/ Jquery",
   },
   {
     imageSrc: 'nyheadline_cropped.jpg',
     imageAlt: 'nyheadline image cap',
     projectLink: 'https://nyheadline.com',
     projectTitle: 'NYheadline',
-    projectDesc: 'Built with Angular w/ MDBootstrap & Firebase',
+    projectDesc:
+      "One of the 50 News feed application that I've build during my internship @ Plentisoft. <br>Front-end is build using Angular and Back-end using nodeJS with Firebase cloud functions & Firestore. <br>Technologies: Angular w/ MDBootstrap & Firebase",
   },
   {
     imageSrc: 'covid19my.png',
