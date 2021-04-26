@@ -2,9 +2,9 @@
   <div>
     <Navbar />
 
-    <div id="loader" :class="isLoaded && 'is-loaded'" ref="loader">
-      <div class="loader-container" ref="loaderContainer">
-        <div class="loader-image" ref="loaderImage">
+    <div id="loader" ref="loader" :class="isLoaded && 'is-loaded'">
+      <div ref="loaderContainer" class="loader-container">
+        <div ref="loaderImage" class="loader-image">
           <img class="fuwafuwa" src="~/assets/img/ben_bighead.svg" />
         </div>
 

@@ -105,7 +105,7 @@
     </div>
 
     <!-- Mobile menu, show/hide based on menu state. -->
-    <div id="mobile-menu" class="sm:hidden" ref="mobileMenu">
+    <div id="mobile-menu" ref="mobileMenu" class="sm:hidden">
       <div class="px-2 pt-2 pb-3 space-y-1">
         <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
         <NuxtLink
@@ -138,7 +138,6 @@
         <a
           href="https://blog.benjaminlooi.dev"
           class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-          @click.native="closeMobileMenu()"
         >
           Blog
         </a>
