@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto">
+  <div ref="root" class="container mx-auto">
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
       <div
         v-for="(project, i) in projectsData"
@@ -42,6 +42,17 @@ export default {
   head() {
     return {
       title: 'BENJAMIN LOOI | WEB DEVELOPER | PROJECTS',
+    }
+  },
+  mounted() {
+    if (process.browser) {
+      const ImagesLoaded = require('imagesloaded')
+
+      const rootRef = this.$refs.root
+
+      ImagesLoaded(rootRef, () => {
+        this.$nuxt.$emit('update-locomotive')
+      })
     }
   },
 }

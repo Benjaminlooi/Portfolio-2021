@@ -1,7 +1,5 @@
 <template>
   <div>
-    <Navbar />
-
     <div id="loader" ref="loader" :class="isLoaded && 'is-loaded'">
       <div ref="loaderContainer" class="loader-container">
         <div ref="loaderImage" class="loader-image">
@@ -20,7 +18,24 @@
       </div>
     </div>
 
-    <Nuxt />
+    <LocomotiveScroll
+      ref="scroller"
+      :getted-options="{
+        smooth: true,
+        direction: 'vertical',
+        smartphone: {
+          smooth: true,
+          direction: 'vertical',
+        },
+        tablet: {
+          smooth: true,
+          direction: 'vertical',
+        },
+      }"
+    >
+      <Navbar />
+      <Nuxt />
+    </LocomotiveScroll>
   </div>
 </template>
 
@@ -55,6 +70,7 @@ export default {
         duration: 0.4,
         delay: '-0.4',
       })
+      // .to(loader, { height: 0, opacity: 0, duration: 0.3, delay: 0 })
       .to(loader, { height: 0, opacity: 0, duration: 0.3, delay: 2.5 })
       // .to(loader, { height: 0, opacity: 0, duration: 0.3, delay: 10000 })
       .set(loader, { display: 'none' })
