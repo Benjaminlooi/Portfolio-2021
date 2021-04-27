@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <div class="container-12">
+  <div ref="root">
+    <div ref="containerRef" class="container-12">
       <ul class="social-icons-row mb-3">
         <a class="p-2 fa-lg" href="https://www.facebook.com/benjaminlooi97">
           <font-awesome-icon
@@ -54,14 +54,26 @@
 
     <img
       src="~/assets/img/this-is-ben.png"
-      style="display: none"
+      style="display: none; height: 0; width: 0"
       alt="Benjamin Looi"
     />
   </div>
 </template>
 
 <script>
-export default {}
+export default {
+  mounted() {
+    if (process.browser) {
+      const ImagesLoaded = require('imagesloaded')
+
+      const rootRef = this.$refs.root
+
+      ImagesLoaded(rootRef, () => {
+        this.$nuxt.$emit('update-locomotive')
+      })
+    }
+  },
+}
 </script>
 
 <style lang="scss" scoped>

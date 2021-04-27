@@ -100,7 +100,11 @@ export default {
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [],
+  plugins: [
+    // https://github.com/DidoMarchet/starter-kit-nuxt-locomotive-scroll
+    '~/plugins/locomotiveScroll.client.js',
+    '~/plugins/locomotiveScrollBoth.js',
+  ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
