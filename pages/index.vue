@@ -77,8 +77,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900&display=swap');
-
 .social-icons-row {
   display: flex;
   align-items: center;
