@@ -2,8 +2,8 @@
   <div>
     <div id="loader" ref="loader" :class="isLoaded && 'is-loaded'">
       <div ref="loaderContainer" class="loader-container">
-        <div ref="loaderImage" class="loader-image">
-          <img class="fuwafuwa" src="~/assets/img/ben_bighead.svg" />
+        <div ref="loaderImageContainer" class="loader-image">
+          <img ref="loaderImage" src="~/assets/img/ben_bighead.svg" />
         </div>
 
         <div class="loader-name">
@@ -46,10 +46,12 @@ export default {
   data: () => ({
     isLoaded: false,
     tl: null,
+    loaderImageUpDownUpDownTl: null,
   }),
   mounted() {
     const loader = this.$refs.loader
     const loaderContainerRef = this.$refs.loaderContainer
+    const loaderImageContainer = this.$refs.loaderImageContainer
     const loaderImage = this.$refs.loaderImage
     const loaderNameOutline = this.$refs.loaderNameOutline
     const loaderNameBase = this.$refs.loaderNameBase
@@ -58,7 +60,7 @@ export default {
     this.tl = this.$gsap.timeline()
     this.tl
       .to(loaderContainerRef, { opacity: 1, duration: 1 })
-      .from(loaderImage, { opacity: 0, y: 60, duration: 0.5 })
+      .from(loaderImageContainer, { opacity: 0, y: 60, duration: 0.5 })
       .from([loaderNameOutline, loaderNameBase], {
         opacity: 0,
         y: 60,
@@ -71,9 +73,19 @@ export default {
         delay: '-0.4',
       })
       // .to(loader, { height: 0, opacity: 0, duration: 0.3, delay: 0 })
-      .to(loader, { height: 0, opacity: 0, duration: 0.3, delay: 2.5 })
-      // .to(loader, { height: 0, opacity: 0, duration: 0.3, delay: 10000 })
+      // .to(loader, { height: 0, opacity: 0, duration: 0.3, delay: 2.5 })
+      .to(loader, { height: 0, opacity: 0, duration: 0.3, delay: 10000 })
       .set(loader, { display: 'none' })
+
+    this.loaderImageUpDownUpDownTl = this.$gsap.timeline({
+      repeat: -1,
+      yoyo: true,
+    })
+    this.loaderImageUpDownUpDownTl.to(loaderImage, {
+      y: 20,
+      duration: 1.5,
+      ease: 'power1.inOut',
+    })
   },
 }
 </script>
