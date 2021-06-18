@@ -18,7 +18,7 @@
       <div class="main-description">
         <p>Son of Odin & Jesus</p>
         <p>
-          Suprem leader of
+          Supreme leader of
           <a
             href="https://tanginabobo.benjaminlooi.dev/"
             class="underline text-blue-600"
@@ -113,9 +113,7 @@ export default {
   width: 480px;
   opacity: 0.5;
   font-size: 19px;
-  line-height: 36px;
   margin: 16px 0px 32px;
-  letter-spacing: 0px;
   padding-right: 30px;
 
   @media (max-width: 1200px) {
@@ -149,7 +147,7 @@ export default {
   }
 
   @media (max-width: 600px) {
-    right: 8px;
+    right: -8px;
     width: 265px;
   }
 }
@@ -159,6 +157,18 @@ export default {
   width: 120px;
   top: -297px;
   right: calc((100vw - 1200px) / 2);
+
+  @media (max-width: 1200px) {
+    right: 32px;
+    width: 96px;
+    top: -237px;
+  }
+
+  @media (max-width: 600px) {
+    right: 12px;
+    width: 60px;
+    top: -145px;
+  }
 }
 
 .this-is-ben {
@@ -176,30 +186,6 @@ export default {
 
   .main-image {
     min-width: 700px;
-  }
-
-  .chinese-caligraphy {
-    right: 32px;
-    width: 96px;
-    top: -237px;
-  }
-
-  .chinese-caligraphy-brush {
-    right: 64px;
-    left: unset;
-  }
-}
-
-@media (max-width: 600px) {
-  .chinese-caligraphy {
-    right: 12px;
-    width: 60px;
-    top: -145px;
-  }
-
-  .chinese-caligraphy-brush {
-    right: 16px;
-    width: 265px;
   }
 }
 </style>

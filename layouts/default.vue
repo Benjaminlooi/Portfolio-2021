@@ -74,8 +74,8 @@ export default {
         duration: 0.4,
         delay: '-0.4',
       })
-      .to(loader, { height: 0, opacity: 0, duration: 0.3, delay: 0 })
-      // .to(loader, { height: 0, opacity: 0, duration: 0.3, delay: 2.5 })
+      // .to(loader, { height: 0, opacity: 0, duration: 0.3, delay: 0 })
+      .to(loader, { height: 0, opacity: 0, duration: 0.3, delay: 2.5 })
       // .to(loader, { height: 0, opacity: 0, duration: 0.3, delay: 10000 })
       .set(loader, { display: 'none' })
 
