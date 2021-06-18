@@ -35,7 +35,7 @@ export default {
 }
 </script>
 
-<style lang="scss" sc SocialIconsoped>
+<style lang="scss" scoped>
 .footer-content {
   padding: 1em;
   background-color: #2a2135;
