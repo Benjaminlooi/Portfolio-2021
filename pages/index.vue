@@ -1,20 +1,35 @@
 <template>
   <div ref="root">
     <div ref="containerRef" class="container-12">
-      <SocialIcons class="mb-3" />
-      <h1 class="main-hero">
-        <span>Benjamin<br />Looi</span>
-      </h1>
-      <h3 class="main-caption">I make <strong>Websites</strong></h3>
-      <p class="main-description">Son of Odin & Jesus</p>
-    </div>
-
-    <div class="image-wrapper">
       <img
         class="chinese-caligraphy-brush"
         src="~/assets/img/caligraphy-brush.png"
         alt="Brush"
       />
+
+      <SocialIcons class="mb-3" />
+
+      <h1 class="main-hero">
+        <span>Benjamin<br />Looi</span>
+      </h1>
+
+      <h3 class="main-caption">I make <strong>Websites</strong></h3>
+
+      <div class="main-description">
+        <p>Son of Odin & Jesus</p>
+        <p>
+          Suprem leader of
+          <a
+            href="https://tanginabobo.benjaminlooi.dev/"
+            class="underline text-blue-600"
+            >Tangina Bobo Gang</a
+          >
+        </p>
+        <p>And the future Prime Minister of Malaysia</p>
+      </div>
+    </div>
+
+    <div class="image-wrapper">
       <img
         class="chinese-caligraphy"
         src="~/assets/img/ben_mandarin_name.png"
@@ -57,12 +72,14 @@ export default {
 
 <style lang="scss" scoped>
 .container-12 {
+  position: relative;
   max-width: 1200px;
   margin: 90px auto 0px;
-}
 
-.codewars-tag {
-  vertical-align: inherit;
+  @media (max-width: 1200px) {
+    width: auto;
+    padding: 0px 32px;
+  }
 }
 
 .main-hero {
@@ -72,6 +89,12 @@ export default {
   letter-spacing: 1px;
   line-height: 100px;
   margin-bottom: 16px;
+
+  @media (max-width: 1200px) {
+    font-size: 64px;
+    /* letter-spacing: -1.6px; */
+    line-height: 64px;
+  }
 }
 
 .main-caption {
@@ -93,6 +116,11 @@ export default {
   line-height: 36px;
   margin: 16px 0px 32px;
   letter-spacing: 0px;
+  padding-right: 30px;
+
+  @media (max-width: 1200px) {
+    width: auto;
+  }
 }
 
 .image-wrapper {
@@ -110,9 +138,20 @@ export default {
 
 .chinese-caligraphy-brush {
   position: absolute;
-  top: -395px;
+  top: -64px;
   left: calc((100vw - 1200px) / 2 + 716px);
   transform: rotate(20deg);
+  height: auto;
+
+  @media (max-width: 1200px) {
+    right: 64px;
+    left: unset;
+  }
+
+  @media (max-width: 600px) {
+    right: 8px;
+    width: 265px;
+  }
 }
 
 .chinese-caligraphy {
@@ -131,21 +170,6 @@ export default {
 }
 
 @media (max-width: 1200px) {
-  .container-12 {
-    width: auto;
-    padding: 0px 32px;
-  }
-
-  .main-hero {
-    font-size: 64px;
-    letter-spacing: -1.6px;
-    line-height: 64px;
-  }
-
-  .main-description {
-    width: auto;
-  }
-
   .image-wrapper {
     padding-left: 32px;
   }

@@ -59,11 +59,16 @@
             </svg>
           </button>
         </div>
-        <div
-          class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-between"
-        >
+        <div class="flex-1 flex items-center justify-center sm:justify-between">
           <div class="flex-shrink-0 flex items-center">
-            <h1 class="color-coolGray text-lg">Benjamin</h1>
+            <img
+              src="~/assets/img/ben_bighead.png"
+              width="50"
+              height="50"
+              class="mr-1"
+              alt="benjamin looi logo"
+            />
+            <h1 class="color-coolGray text-lg">Benjamin Looi</h1>
           </div>
           <div class="hidden sm:block sm:ml-6">
             <div class="flex space-x-4">
