@@ -1,30 +1,7 @@
 <template>
   <div ref="root">
     <div ref="containerRef" class="container-12">
-      <ul class="social-icons-row mb-3">
-        <a class="p-2 fa-lg" href="https://www.facebook.com/benjaminlooi97">
-          <font-awesome-icon
-            :icon="['fab', 'facebook-square']"
-            style="color: #2196f3"
-          />
-        </a>
-        <a class="p-2 fa-lg" href="https://www.instagram.com/benjaminlooi/">
-          <font-awesome-icon
-            :icon="['fab', 'instagram']"
-            style="color: #607d8b"
-          />
-        </a>
-        <a class="p-2 fa-lg" href="https://github.com/Benjaminlooi">
-          <font-awesome-icon :icon="['fab', 'github']" style="color: #673ab7" />
-        </a>
-        <a class="p-2 fa-lg" href="https://www.codewars.com/users/Benjaminlooi">
-          <img
-            class="codewars-tag"
-            src="https://www.codewars.com/users/Benjaminlooi/badges/micro"
-            alt=""
-          />
-        </a>
-      </ul>
+      <SocialIcons class="mb-3" />
       <h1 class="main-hero">
         <span>Benjamin<br />Looi</span>
       </h1>
@@ -61,7 +38,9 @@
 </template>
 
 <script>
+import SocialIcons from '~/components/SocialIcons.vue'
 export default {
+  components: { SocialIcons },
   mounted() {
     if (process.browser) {
       const ImagesLoaded = require('imagesloaded')
@@ -77,11 +56,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.social-icons-row {
-  display: flex;
-  align-items: center;
-}
-
 .container-12 {
   max-width: 1200px;
   margin: 90px auto 0px;
