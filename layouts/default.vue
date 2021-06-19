@@ -96,7 +96,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 #loader {
   opacity: 1;
   position: fixed;

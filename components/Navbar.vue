@@ -1,7 +1,7 @@
 <!-- This example requires Tailwind CSS v2.0+ -->
 <template>
   <!-- This example requires Tailwind CSS v2.0+ -->
-  <nav class="bg-white">
+  <nav class="bg-white font-nunito">
     <div class="mx-auto px-2 sm:px-6 lg:px-8">
       <div class="relative flex items-center justify-between h-16">
         <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -95,7 +95,7 @@
                   py-2
                   rounded-md
                   text-sm
-                  font-medium
+                  font-semibold
                 "
               >
                 Home
@@ -112,7 +112,7 @@
                   py-2
                   rounded-md
                   text-sm
-                  font-medium
+                  font-semibold
                 "
               >
                 Projects
@@ -129,7 +129,7 @@
                   py-2
                   rounded-md
                   text-sm
-                  font-medium
+                  font-semibold
                 "
               >
                 Resume
@@ -145,7 +145,7 @@
                   py-2
                   rounded-md
                   text-sm
-                  font-medium
+                  font-semibold
                 "
               >
                 Blog
@@ -164,7 +164,7 @@
           to="/"
           exact
           class="
-            text-gray-300
+            text-gray-400
             hover:bg-gray-700
             hover:text-white
             block
@@ -172,7 +172,7 @@
             py-2
             rounded-md
             text-base
-            font-medium
+            font-semibold
           "
           @click.native="closeMobileMenu()"
         >
@@ -183,7 +183,7 @@
           to="/projects"
           exact
           class="
-            text-gray-300
+            text-gray-400
             hover:bg-gray-700
             hover:text-white
             block
@@ -191,7 +191,7 @@
             py-2
             rounded-md
             text-base
-            font-medium
+            font-semibold
           "
           @click.native="closeMobileMenu()"
         >
@@ -202,7 +202,7 @@
           to="/resume"
           exact
           class="
-            text-gray-300
+            text-gray-400
             hover:bg-gray-700
             hover:text-white
             block
@@ -210,7 +210,7 @@
             py-2
             rounded-md
             text-base
-            font-medium
+            font-semibold
           "
           @click.native="closeMobileMenu()"
         >
@@ -220,7 +220,7 @@
         <a
           href="https://blog.benjaminlooi.dev"
           class="
-            text-gray-300
+            text-gray-400
             hover:bg-gray-700
             hover:text-white
             block
@@ -228,7 +228,7 @@
             py-2
             rounded-md
             text-base
-            font-medium
+            font-semibold
           "
         >
           Blog
@@ -289,6 +289,7 @@ export default {
 <style lang="scss" scoped>
 a.nuxt-link-exact-active {
   color: rgba(31, 41, 55, var(--tw-text-opacity));
+  font-weight: bold;
 
   &:hover {
     color: #fff;
