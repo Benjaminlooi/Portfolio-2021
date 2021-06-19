@@ -9,9 +9,7 @@
 
       <SocialIcons class="mb-3" />
 
-      <h1 class="main-hero">
-        <span>Benjamin<br />Looi</span>
-      </h1>
+      <h1 class="main-hero">Benjamin<br />Looi</h1>
 
       <h3 class="main-caption">I make <strong>Websites</strong></h3>
 
