@@ -94,10 +94,6 @@ export default {
         rel: 'stylesheet',
         href: 'https://fonts.googleapis.com/css2?family=Archivo:wght@400;800&display=swap',
       },
-      {
-        rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900&display=swap',
-      },
     ],
   },
 
@@ -131,6 +127,8 @@ export default {
     '@nuxtjs/fontawesome',
     // https://image.nuxtjs.org/getting-started/installation
     '@nuxt/image',
+    // https://www.npmjs.com/package/@nuxtjs/google-fonts
+    '@nuxtjs/google-fonts',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -160,6 +158,13 @@ export default {
         'faTwitter',
         'faLinkedinIn',
       ],
+    },
+  },
+
+  googleFonts: {
+    families: {
+      'Playfair+Display': [400, 700],
+      Archivo: [400, 800],
     },
   },
 }
