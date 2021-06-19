@@ -36,7 +36,7 @@
       <div class="main-image-wrapper">
         <nuxt-img
           class="main-image"
-          src="/img/horses_painting.jpg"
+          src="/img/horses_painting-min.jpg"
           alt="Horse Painting"
         />
       </div>
