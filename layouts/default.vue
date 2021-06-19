@@ -3,7 +3,11 @@
     <div id="loader" ref="loader" :class="isLoaded && 'is-loaded'">
       <div ref="loaderContainer" class="loader-container">
         <div ref="loaderImageContainer" class="loader-image">
-          <img ref="loaderImage" src="~/assets/img/ben_bighead.svg" />
+          <img
+            ref="loaderImage"
+            src="~/assets/img/ben_bighead.svg"
+            alt="Benjamin Looi loading screen avatar"
+          />
         </div>
 
         <div class="loader-name">
