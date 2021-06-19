@@ -166,6 +166,7 @@ export default {
       'Playfair+Display': [400, 700],
       Archivo: [400, 800],
       Nunito: [400, 600, 700],
+      Montserrat: true,
     },
   },
 }
