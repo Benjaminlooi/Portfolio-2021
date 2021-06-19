@@ -1,9 +1,9 @@
 <template>
   <div ref="root">
     <div ref="containerRef" class="container-12">
-      <img
+      <nuxt-img
         class="chinese-caligraphy-brush"
-        src="~/assets/img/caligraphy-brush.png"
+        src="/img/caligraphy-brush.png"
         alt="Brush"
       />
 
@@ -30,22 +30,22 @@
     </div>
 
     <div class="image-wrapper">
-      <img
+      <nuxt-img
         class="chinese-caligraphy"
-        src="~/assets/img/ben_mandarin_name.png"
+        src="/img/ben_mandarin_name.png"
         alt="Benjamin Looi Name"
       />
       <div class="main-image-wrapper">
-        <img
+        <nuxt-img
           class="main-image"
-          src="~/assets/img/horses_painting.jpg"
+          src="/img/horses_painting.jpg"
           alt="Horse Painting"
         />
       </div>
     </div>
 
-    <img
-      src="~/assets/img/this-is-ben.png"
+    <nuxt-img
+      src="/img/this-is-ben.png"
       style="display: none; height: 0; width: 0"
       alt="Benjamin Looi"
     />
