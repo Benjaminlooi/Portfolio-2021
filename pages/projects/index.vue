@@ -8,8 +8,8 @@
       >
         <div class="bg-white shadow-2xl h-full">
           <a :href="project.projectLink">
-            <img
-              :src="require(`~/assets/img/${project.imageSrc}`)"
+            <nuxt-img
+              :src="`/img/${project.imageSrc}`"
               :alt="project.imageAlt"
             />
           </a>

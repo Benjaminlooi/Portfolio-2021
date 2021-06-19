@@ -1,10 +1,6 @@
 <template>
   <div class="container mx-auto" ref="root">
-    <img
-      class="w-full"
-      :src="require('~/assets/img/cv.jpg')"
-      alt="Benjamin Looi's resume"
-    />
+    <nuxt-img class="w-full" src="/img/cv.jpg" alt="Benjamin Looi's resume" />
   </div>
 </template>
 
