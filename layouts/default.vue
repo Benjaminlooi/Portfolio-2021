@@ -37,6 +37,7 @@
         },
       }"
     >
+      <TopBanner />
       <Navbar />
       <Nuxt />
       <Footer />
@@ -47,8 +48,9 @@
 <script>
 import Footer from '~/components/Footer.vue'
 import Navbar from '~/components/Navbar.vue'
+import TopBanner from '~/components/TopBanner.vue'
 export default {
-  components: { Navbar, Footer },
+  components: { TopBanner, Navbar, Footer },
   data: () => ({
     isLoaded: false,
     tl: null,
