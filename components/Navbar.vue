@@ -8,18 +8,7 @@
           <!-- Mobile menu button-->
           <button
             type="button"
-            class="
-              inline-flex
-              items-center
-              justify-center
-              p-2
-              rounded-md
-              text-gray-400
-              hover:text-white
-              hover:bg-gray-700
-              focus:outline-none
-              focus:ring-2 focus:ring-inset focus:ring-white
-            "
+            class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
             aria-controls="mobile-menu"
             @click="toggleMobileNavBar()"
           >
@@ -87,16 +76,7 @@
               <NuxtLink
                 to="/"
                 exact
-                class="
-                  text-gray-400
-                  hover:bg-gray-700
-                  hover:text-white
-                  px-3
-                  py-2
-                  rounded-md
-                  text-sm
-                  font-semibold
-                "
+                class="text-gray-400 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-semibold"
               >
                 Home
               </NuxtLink>
@@ -104,16 +84,7 @@
               <NuxtLink
                 to="/projects"
                 exact
-                class="
-                  text-gray-400
-                  hover:bg-gray-700
-                  hover:text-white
-                  px-3
-                  py-2
-                  rounded-md
-                  text-sm
-                  font-semibold
-                "
+                class="text-gray-400 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-semibold"
               >
                 Projects
               </NuxtLink>
@@ -121,32 +92,14 @@
               <NuxtLink
                 to="/resume"
                 exact
-                class="
-                  text-gray-400
-                  hover:bg-gray-700
-                  hover:text-white
-                  px-3
-                  py-2
-                  rounded-md
-                  text-sm
-                  font-semibold
-                "
+                class="text-gray-400 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-semibold"
               >
                 Resume
               </NuxtLink>
 
               <a
                 href="https://blog.benjaminlooi.dev"
-                class="
-                  text-gray-400
-                  hover:bg-gray-700
-                  hover:text-white
-                  px-3
-                  py-2
-                  rounded-md
-                  text-sm
-                  font-semibold
-                "
+                class="text-gray-400 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-semibold"
               >
                 Blog
               </a>
@@ -163,17 +116,7 @@
         <NuxtLink
           to="/"
           exact
-          class="
-            text-gray-400
-            hover:bg-gray-700
-            hover:text-white
-            block
-            px-3
-            py-2
-            rounded-md
-            text-base
-            font-semibold
-          "
+          class="text-gray-400 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-semibold"
           @click.native="closeMobileMenu()"
         >
           Home
@@ -182,17 +125,7 @@
         <NuxtLink
           to="/projects"
           exact
-          class="
-            text-gray-400
-            hover:bg-gray-700
-            hover:text-white
-            block
-            px-3
-            py-2
-            rounded-md
-            text-base
-            font-semibold
-          "
+          class="text-gray-400 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-semibold"
           @click.native="closeMobileMenu()"
         >
           Projects
@@ -201,17 +134,7 @@
         <NuxtLink
           to="/resume"
           exact
-          class="
-            text-gray-400
-            hover:bg-gray-700
-            hover:text-white
-            block
-            px-3
-            py-2
-            rounded-md
-            text-base
-            font-semibold
-          "
+          class="text-gray-400 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-semibold"
           @click.native="closeMobileMenu()"
         >
           Resume
@@ -219,17 +142,7 @@
 
         <a
           href="https://blog.benjaminlooi.dev"
-          class="
-            text-gray-400
-            hover:bg-gray-700
-            hover:text-white
-            block
-            px-3
-            py-2
-            rounded-md
-            text-base
-            font-semibold
-          "
+          class="text-gray-400 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-semibold"
         >
           Blog
         </a>
