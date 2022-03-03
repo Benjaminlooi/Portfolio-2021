@@ -99,17 +99,17 @@ export default {
   font-size: 32px;
   letter-spacing: -0.6px;
   font-weight: 700;
-  color: #adadad;
+  color: #767676;
 }
 
 .main-caption strong {
   font-weight: 700;
-  color: #6f6f6f;
+  color: #505050;
 }
 
 .main-description {
   width: 480px;
-  opacity: 0.5;
+  opacity: 0.6;
   font-size: 19px;
   margin: 16px 0px 32px;
   padding-right: 30px;

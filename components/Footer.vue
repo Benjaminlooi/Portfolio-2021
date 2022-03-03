@@ -11,6 +11,10 @@
     </div>
 
     <div class="footer-content text-center">
+      <div>
+        Let's build <span>the next</span> <span>big thing</span> together
+      </div>
+
       <div class="flex justify-center mb-6">
         <div class="bg-white rounded-sm p-1"><SocialIcons /></div>
       </div>
