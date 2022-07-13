@@ -2,17 +2,6 @@
   <ul class="social-icons-row">
     <a
       class="p-2 fa-lg"
-      href="https://www.facebook.com/benjaminlooi97"
-      aria-label="Benjamin Looi's Facebook"
-    >
-      <font-awesome-icon
-        :icon="['fab', 'facebook-square']"
-        class="facebook-icon"
-      />
-    </a>
-
-    <a
-      class="p-2 fa-lg"
       href="https://www.instagram.com/benjaminlooi/"
       aria-label="Benjamin Looi's Instagram"
     >
@@ -21,18 +10,18 @@
 
     <a
       class="p-2 fa-lg"
-      href="https://github.com/Benjaminlooi"
-      aria-label="Benjamin Looi's Github"
-    >
-      <font-awesome-icon :icon="['fab', 'github']" class="github-icon" />
-    </a>
-
-    <a
-      class="p-2 fa-lg"
       href="https://twitter.com/benjaminlooi_"
       aria-label="Benjamin Looi's Twitter"
     >
       <font-awesome-icon :icon="['fab', 'twitter']" class="twitter-icon" />
+    </a>
+
+    <a
+      class="p-2 fa-lg"
+      href="https://github.com/Benjaminlooi"
+      aria-label="Benjamin Looi's Github"
+    >
+      <font-awesome-icon :icon="['fab', 'github']" class="github-icon" />
     </a>
 
     <a
@@ -53,14 +42,6 @@ export default {}
 .social-icons-row {
   display: flex;
   align-items: center;
-}
-
-.facebook-icon {
-  color: #2196f3;
-
-  &:hover {
-    color: rgb(20 114 172);
-  }
 }
 
 .instagram-icon {
