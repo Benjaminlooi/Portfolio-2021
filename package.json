@@ -11,6 +11,7 @@
     "lint": "npm run lint:js"
   },
   "dependencies": {
+    "@fortawesome/vue-fontawesome": "^2.0.8",
     "@nuxt/content": "^1.15.1",
     "@vue-hero-icons/outline": "^1.7.2",
     "core-js": "^3.21.1",
@@ -22,7 +23,6 @@
     "@fortawesome/free-brands-svg-icons": "^5.15.4",
     "@fortawesome/free-regular-svg-icons": "^5.15.4",
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
-    "@headlessui/vue": "^1.5.0",
     "@nuxt/image": "0.6.0",
     "@nuxtjs/eslint-config": "^6.0.1",
     "@nuxtjs/eslint-module": "^3.0.2",

@@ -151,13 +151,7 @@ export default {
   fontawesome: {
     icons: {
       solid: ['faExternalLinkAlt', 'faHeart', 'faCode'],
-      brands: [
-        'faFacebookSquare',
-        'faGithub',
-        'faInstagram',
-        'faTwitter',
-        'faLinkedinIn',
-      ],
+      brands: ['faGithub', 'faInstagram', 'faTwitter', 'faLinkedinIn'],
     },
   },
 
