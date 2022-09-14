@@ -89,13 +89,12 @@
                 Projects
               </NuxtLink>
 
-              <NuxtLink
-                to="/resume"
-                exact
+              <a
+                href="https://resume.benjaminlooi.dev"
                 class="text-gray-400 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-semibold"
               >
                 Resume
-              </NuxtLink>
+              </a>
 
               <a
                 href="https://blog.benjaminlooi.dev"
@@ -131,14 +130,13 @@
           Projects
         </NuxtLink>
 
-        <NuxtLink
-          to="/resume"
-          exact
+        <a
+          href="https://resume.benjaminlooi.dev"
           class="text-gray-400 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-semibold"
           @click.native="closeMobileMenu()"
         >
           Resume
-        </NuxtLink>
+        </a>
 
         <a
           href="https://blog.benjaminlooi.dev"
