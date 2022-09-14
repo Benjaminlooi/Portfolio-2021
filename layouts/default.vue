@@ -178,7 +178,7 @@ export default {
 
   p {
     font-family: 'Archivo', sans-serif;
-    margin: 50px 0 0 17.5%;
+    margin: 4% 0 0 17.5%;
     text-align: left;
     color: white;
     font-weight: normal;
